@@ -65,3 +65,5 @@ typings/
 .env
 .next
 dist/
+
+.idea
