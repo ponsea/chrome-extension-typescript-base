@@ -4,15 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --config webpack.dev.js --watch",
+    "build": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "ponsea",
   "license": "ISC",
   "devDependencies": {
+    "@types/chrome": "0.0.114",
     "@types/node": "^14.0.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "html-webpack-plugin": "^4.3.0",
     "npm-run-all": "^4.1.5",
+    "raw-loader": "^4.0.1",
     "rimraf": "^3.0.2",
+    "ts-loader": "^7.0.4",
     "ts-node": "^8.10.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.9.3",
